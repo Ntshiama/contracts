@@ -1,7 +1,7 @@
 using { cuid, managed, Currency, Country } from '@sap/cds/common';
 
 entity Partners : cuid, managed {
-   title    : String;
+   title    : localized String;
    name     : String;
    email    : String;
    phone    : String;
@@ -11,15 +11,15 @@ entity Partners : cuid, managed {
    }
 
 entity Contracts: cuid, managed {
-   title            : String;
-   description      : String;
+   title            : localized String;
+   description      : localized String;
    internalcontacr  : String;
    partnercontract  : String;
    startdate        : Date;
    enddate          : Date;
    amount           : Decimal;   
    currency         : Currency;
-   status           : String;
+   status           : localized String;
    partner          : Association to Partners;
    items            : Composition of many Contractitems on items.parent = $self;   
    }
