@@ -14,11 +14,4 @@
     "start": "cds-serve"
   },
   "private": true
-  , "cds": { "requires": {
-   "db": {
-      "kind": "sqlite",
-      "credentials": { "url": "db.sqlite" },
-      "schema_evolution": "auto"
-   }
-}}
 }
