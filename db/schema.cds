@@ -5,7 +5,7 @@ entity Partner : cuid, managed {
    name     : localized String;
    email    :localized String;
    phone    : localized String;
-   stree    : localized String;
+   street    : localized String;
    city     : localized String;
    country  : Country;
    }
@@ -13,7 +13,7 @@ entity Partner : cuid, managed {
 entity contract: cuid, managed {
    title            : localized String;
    description      : localized String;
-   internalcontacr  : localized String;
+   internalcontract  : localized String;
    partnercontract  :localized String;
    startdate        : Date;
    enddate          : Date;
