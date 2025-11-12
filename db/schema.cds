@@ -2,7 +2,7 @@ using { cuid, managed, Currency, Country } from '@sap/cds/common';
   namespace blackwyse.contracts;
   
   
-entity Partners : cuid {
+entity Partners : cuid, managed {
    title    : localized String;
    name     : String;
    email    : String;
@@ -12,7 +12,7 @@ entity Partners : cuid {
    country  : Country;
    }
 
-entity Contracts: cuid{
+entity Contracts: cuid, managed {
    title            : localized String;
    description      : localized String;
    internalcontact  : String;
@@ -26,7 +26,7 @@ entity Contracts: cuid{
    items            : Composition of many Contractitems on items.parent = $self;   
    }
 
-entity Contractitems: cuid {
+entity Contractitems: cuid, managed {
     parent      : Association to  Contracts;
     description : String;
     quantity    : Integer;

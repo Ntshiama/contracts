@@ -9,7 +9,10 @@ service ContractService {
          key ID,
              title,
              name,
-             email
+             email,
+             phone,
+             street,
+             country  
        };
 
     @cds.odata.valuelist
@@ -20,7 +23,13 @@ service ContractService {
             title,
             description,
             internalcontact,
-            partnercontract            
+            partnercontract,
+            startdate,
+            enddate,
+            amount,  
+            currency,
+            status,
+            partner            
        };
     @cds.odata.valuelist
     @odata.draft.enabled
@@ -29,6 +38,12 @@ service ContractService {
           key ID,
               parent,
               description,
+              quantity,
+              price,
+              currency ,
+              startdate,
+              enddate,
+              attachmentlink,
                            
     };
 }

@@ -1,0 +1,12 @@
+@server==http://localhost:4004
+@service=/odata/v4/ContractService
+GET {{{server}}}{{{service}}}/Contracts
+
+POST {{{server}}}{{{service}}}/Contracts
+Content-Type: application/json
+{
+    "Title": "New Contract",
+    "StartDate": "2024-01-01",
+    "EndDate": "2024-12-31",
+    "Amount": 10000
+}
