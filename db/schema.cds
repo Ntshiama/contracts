@@ -1,5 +1,5 @@
 using { cuid, managed, Currency, Country } from '@sap/cds/common';
-  namespace sap.bwys.contracts;
+  namespace bwys.contracts;
   
   
 entity Partners : cuid, managed {

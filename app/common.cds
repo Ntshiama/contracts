@@ -1,6 +1,6 @@
-using { sap.bwys.contracts as my } from '../db/schema';
+using { bwys.contracts as my } from '../db/schema';
 
-annotate my.Partners with{
+annotate my.Partners with {
     title  @title : '{i18n>Title}';
     name   @title : '{i18n>Name}';
     email  @title : '{i18n>E-Mail}';
@@ -21,5 +21,12 @@ annotate my.Contracts with {
    status           @title : '{i18n>Status}'; 
 };
 
-
-
+annotate my.Contractitems with {
+   parent      @title : '{i18n>Title}';
+   description @title : '{i18n>Description}';
+   quantity    @title : '{i18n>Quantity}';
+   price       @title : '{i18n>Price}';
+   currency    @title : '{i18n>Currency}';
+   startdate   @title : '{i18n>Startdate}';
+   enddate     @title : '{i18n>Enddate}';
+}
