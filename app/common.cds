@@ -12,7 +12,7 @@ annotate my.Partners with{
 
 annotate my.Contracts with {
    title            @title : '{i18n>Title}';
-   description      @title : '{i18n>Description}';
+   description      @title : '{i18n>Description}' @UI.MultiLineText;
    internalcontact  @title : '{i18n>Internalcontact}';
    partnercontract  @title : '{i18n>Perntercontact}';
    startdate        @title : '{i18n>Startdate}';
