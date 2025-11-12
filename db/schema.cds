@@ -1,11 +1,13 @@
 using { cuid, managed, Currency, Country } from '@sap/cds/common';
-
+  namespace sap.bwys.contracts;
+  
+  
 entity Partners : cuid, managed {
    title    : localized String;
    name     : String;
    email    : String;
    phone    : String;
-   stree    : String;
+   street    : String;
    city     : String;
    country  : Country;
    }
@@ -13,7 +15,7 @@ entity Partners : cuid, managed {
 entity Contracts: cuid, managed {
    title            : localized String;
    description      : localized String;
-   internalcontacr  : String;
+   internalcontact  : String;
    partnercontract  : String;
    startdate        : Date;
    enddate          : Date;
