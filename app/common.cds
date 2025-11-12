@@ -1,4 +1,4 @@
-using { bwys.contracts as my } from '../db/schema';
+using { blackwyse.contracts as my } from '../db/schema';
 
 annotate my.Partners with {
     title  @title : '{i18n>Title}';

@@ -1,3 +1,9 @@
 @server=http://localhost:4004'
 @service=/odata/v4/admin
 GET {{{server}}}{{{service}}}
+
+POST {{{server}}}{{{service}}}/Partners
+Content-Type: application/json
+{
+    "problemDescription":"test"
+}

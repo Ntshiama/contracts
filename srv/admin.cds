@@ -1,6 +1,5 @@
+using { blackwyse.contracts as my } from '../db/schema';
 
-using { bwys.contracts as my } from '../db/schema';
-
-service AdminService {
-    entity Contracts as projection on my.Contracts;
+service AdminService{
+    entity Partners as projection on my.Partners;
 }
