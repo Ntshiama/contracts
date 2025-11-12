@@ -8,10 +8,18 @@
     "express": "^4"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^2.0.4"
+    "@cap-js/sqlite": "^2.0.4",
+    "cds-plugin-ui5": "^0.13.0"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-contractapp": "cds watch --open blackwyse.contract.ui.contractapp/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
-  "private": true
+  "private": true,
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/contractapp"
+  ]
 }
