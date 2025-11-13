@@ -1,0 +1,4 @@
+ID,title,name,email,phone,street,city,country_code,createdAt,createdBy,modifiedAt,modifiedBy
+a1e9f3d2-4b6c-4f8d-9b1a-1234567890ab,BlackWyse Logistics,Anita Reed,anita.reed@blackwyse.example,+1-555-0101,Harbor Way 12,Portsmouth,GB,2025-11-01T09:00:00Z,admin@blackwyse.local,2025-11-10T12:00:00Z,editor@blackwyse.local
+b2c0d4e5-6f78-4123-8abc-2345678901cd,Oceanic Partners,Jean Moreau,jean.moreau@oceanic.example,+33-1-2345-6789,Quai de la Mer 4,Marseille,FR,2025-10-15T08:30:00Z,admin@blackwyse.local,2025-11-05T14:20:00Z,editor@blackwyse.local
+c3d1e5f6-7a89-4b56-9def-3456789012ef,Stellar Solutions,Hans Müller,hans.mueller@stellar.example,+49-30-555-0199,Sternstrasse 7,Berlin,DE,2025-09-20T07:45:00Z,admin@blackwyse.local,2025-11-09T11:10:00Z,editor@blackwyse.local
