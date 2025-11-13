@@ -5,13 +5,15 @@ service ContractService {
     @cds.odata.valuelist
     @odata.draft.enabled
     entity Partners as 
-       projection on my.Partners {
+       projection on my.Partners{
          key ID,
              title,
              name,
              email,
              phone,
              street,
+             postalcode,
+             city,
              country  
        };
 
@@ -28,8 +30,7 @@ service ContractService {
             enddate,
             amount,  
             currency,
-            status,
-            partner            
+            status  
        };
     @cds.odata.valuelist
     @odata.draft.enabled

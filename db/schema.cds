@@ -3,13 +3,14 @@ using { cuid, managed, Currency, Country } from '@sap/cds/common';
   
   
 entity Partners : cuid, managed {
-   title    : localized String;
-   name     : String;
-   email    : String;
-   phone    : String;
-   street    : String;
-   city     : String;
-   country  : Country;
+   title      : localized String;
+   name       : String;
+   email      : String;
+   phone      : String;
+   street     : String;
+   city       : String;
+   postalcode : String;
+   country    : Country;
    }
 
 entity Contracts: cuid, managed {
