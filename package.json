@@ -13,13 +13,13 @@
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-contractapp": "cds watch --open blackwyse.contract.ui.contractapp/index.html?sap-ui-xx-viewCache=false --livereload false"
+    "watch-contractsapp": "cds watch --open blackwyse.contracts.contractsapp/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "private": true,
   "workspaces": [
     "app/*"
   ],
   "sapux": [
-    "app/contractapp"
+    "app/contractsapp"
   ]
 }
