@@ -1,2 +1,2 @@
 
-using from './contractsapp/annotations';
+using from './contracts/annotations';

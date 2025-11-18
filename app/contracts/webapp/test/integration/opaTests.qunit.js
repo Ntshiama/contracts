@@ -22,7 +22,7 @@ sap.ui.require(
     "sap/ui/thirdparty/qunit-2",
     "sap/ui/qunit/qunit-junit",
     "sap/ui/qunit/qunit-coverage",
-    'blackwyse/contracts/contractsapp/test/integration/FirstJourney'
+    'blackwyse/contracts/contracts/test/integration/FirstJourney'
   ], function (QUnit) {
     "use strict";
     QUnit.start();

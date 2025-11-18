@@ -8,7 +8,7 @@ sap.ui.define(['sap/fe/test/ObjectPage'], function(ObjectPage) {
 
     return new ObjectPage(
         {
-            appId: 'blackwyse.contracts.contractsapp',
+            appId: 'blackwyse.contracts.contracts',
             componentId: 'ContractsObjectPage',
             contextPath: '/Contracts'
         },

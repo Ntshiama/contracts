@@ -1,7 +1,7 @@
 {
   "_version": "1.76.0",
   "sap.app": {
-    "id": "blackwyse.contracts.contractsapp",
+    "id": "blackwyse.contracts.contracts",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.19.5",
-      "toolsId": "0104fa65-e932-4dab-b8b4-60fb8fd55b2d"
+      "toolsId": "b156408a-81c6-451d-8ab2-d19cc10b095f"
     },
     "dataSources": {
       "mainService": {
@@ -45,7 +45,7 @@
   "sap.ui5": {
     "flexEnabled": true,
     "dependencies": {
-      "minUI5Version": "1.142.0",
+      "minUI5Version": "1.142.1",
       "libs": {
         "sap.m": {},
         "sap.ui.core": {},
@@ -60,7 +60,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "blackwyse.contracts.contractsapp.i18n.i18n"
+          "bundleName": "blackwyse.contracts.contracts.i18n.i18n"
         }
       },
       "": {

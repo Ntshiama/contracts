@@ -1,24 +1,24 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Fri Nov 14 2025 09:48:16 GMT+0100 (Central European Standard Time)|
+|**Generation Date and Time**<br>Tue Nov 18 2025 13:08:28 GMT+0100 (Central European Standard Time)|
 |**App Generator**<br>SAP Fiori Application Generator|
 |**App Generator Version**<br>1.19.5|
 |**Generation Platform**<br>Visual Studio Code|
 |**Template Used**<br>List Report Page V4|
 |**Service Type**<br>Local CAP|
 |**Service URL**<br>http://localhost:4004/odata/v4/contract/|
-|**Module Name**<br>contractsapp|
-|**Application Title**<br>Contract Manager|
+|**Module Name**<br>contracts|
+|**Application Title**<br>Contract Manger|
 |**Namespace**<br>blackwyse.contracts|
 |**UI5 Theme**<br>sap_horizon|
-|**UI5 Version**<br>1.142.0|
+|**UI5 Version**<br>1.142.1|
 |**Enable Code Assist Libraries**<br>False|
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
 |**Main Entity**<br>Contracts|
 
-## contractsapp
+## contracts
 
 An SAP Fiori application.
 
@@ -26,7 +26,7 @@ An SAP Fiori application.
 
 -   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  To launch the generated app, start your CAP project:  and navigate to the following location in your browser:
 
-http://localhost:4004/blackwyse.contracts.contractsapp/index.html
+http://localhost:4004/blackwyse.contracts.contracts/index.html
 
 #### Pre-requisites:
 

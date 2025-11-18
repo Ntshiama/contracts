@@ -8,7 +8,7 @@ sap.ui.define(['sap/fe/test/ListReport'], function(ListReport) {
 
     return new ListReport(
         {
-            appId: 'blackwyse.contracts.contractsapp',
+            appId: 'blackwyse.contracts.contracts',
             componentId: 'ContractsList',
             contextPath: '/Contracts'
         },

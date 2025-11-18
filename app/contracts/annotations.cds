@@ -33,11 +33,6 @@ annotate service.Contracts with @(
             },
             {
                 $Type : 'UI.DataField',
-                Label : 'currency_code',
-                Value : currency_code,
-            },
-            {
-                $Type : 'UI.DataField',
                 Value : status,
             },
         ],

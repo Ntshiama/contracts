@@ -3,7 +3,7 @@ sap.ui.define(
     function (Component) {
         "use strict";
 
-        return Component.extend("blackwyse.contracts.contractsapp.Component", {
+        return Component.extend("blackwyse.contracts.contracts.Component", {
             metadata: {
                 manifest: "json"
             }
