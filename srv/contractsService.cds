@@ -25,15 +25,16 @@ service ContractService {
             title,
             description,
             internalcontact,
-            partnercontract,
+            //,
             startdate,
             enddate,
             amount,  
             currency,
-            status  
+            status,
+            partner,
+            items : redirected to Contractitems
        };
     @cds.odata.valuelist
-    @odata.draft.enabled
     entity Contractitems as 
         projection on my.Contractitems {
           key ID,

@@ -18,6 +18,7 @@ entity Contracts: cuid, managed {
    description      : localized String;
    internalcontact  : String;
    partnercontract  : String;
+   @Common.FieldControl: #Mandatory
    startdate        : Date;
    enddate          : Date;
    amount           : Decimal;   
@@ -28,7 +29,7 @@ entity Contracts: cuid, managed {
    }
 
 entity Contractitems: cuid, managed {
-    parent      : Association to  Contracts;
+    parent      : Association to one Contracts;
     description : String;
     quantity    : Integer;
     price       : Decimal;
