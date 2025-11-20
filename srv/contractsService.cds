@@ -9,7 +9,7 @@ service ContractService {
          key ID,
              title,
              name,
-             @Core.IsEmail: true
+             @Communication.IsEmailAddress: true
              email,
              phone,
              street,
