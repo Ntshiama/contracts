@@ -1,4 +1,4 @@
-using ContractService as service from '../../srv/contactsService';
+using ContractService as service from '../../srv/contractsService';
 
 annotate service.Contracts with @(
     UI.FieldGroup #GeneratedGroup: {
@@ -63,6 +63,7 @@ annotate service.Contracts with @(
         {
             $Type: 'UI.DataField',
             Value: title,
+            ![@UI.Importance]: #High
         },
         {
             $Type: 'UI.DataField',

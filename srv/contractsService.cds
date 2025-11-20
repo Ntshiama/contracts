@@ -9,6 +9,7 @@ service ContractService {
          key ID,
              title,
              name,
+             @Core.IsEmail: true
              email,
              phone,
              street,
@@ -45,6 +46,7 @@ service ContractService {
               currency ,
               startdate,
               enddate,
+              @Core.IsURL: true
               attachmentlink,
                            
     };

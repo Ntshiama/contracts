@@ -5,6 +5,7 @@ using { cuid, managed, Currency, Country } from '@sap/cds/common';
 entity Partners : cuid, managed {
    title      : localized String;
    name       : String;
+   @Core.IsEmail: true
    email      : String;
    phone      : String;
    street     : String;
@@ -36,6 +37,5 @@ entity Contractitems: cuid, managed {
     currency    : Currency;
     startdate   : Date;
     enddate     : Date;
-    @Core.IsURL: true
-    attachmentlink: String @title : 'Attachment Link'
+    attachmentlink: String
     }
