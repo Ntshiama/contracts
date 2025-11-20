@@ -111,7 +111,7 @@ annotate service.Contractitems with @UI.LineItem: [
         Value: enddate,
     },
     {
-        $Type: 'UI.DataFieldwithUrl',
+        $Type: 'UI.DataFieldWithUrl',
         Label: 'Attachment Link',
         Value: attachmentlink,
     },
