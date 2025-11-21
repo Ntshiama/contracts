@@ -6,11 +6,12 @@
     "i18n": {
       "defaultLocale": "en"
     }
-    },
+  },
   "dependencies": {
     "@cap-js/postgres": "^2",
     "@sap/cds": "^9",
-    "express": "^4"
+    "express": "^4",
+    "nodemailer": "^7.0.10"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^2.0.4",
