@@ -2,14 +2,20 @@
   "name": "contracts",
   "version": "1.0.0",
   "description": "A simple CAP project.",
+  "cds": {
+    "i18n": {
+      "defaultLocale": "en"
+    }
+    },
   "dependencies": {
     "@cap-js/postgres": "^2",
     "@sap/cds": "^9",
-    "@sap/ux-specification": "^1.124.9",
     "express": "^4"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^2.0.4",
+    "@sap/ux-specification": "^1.139.0",
+    "@ui5/cli": "^4.0.36",
     "cds-plugin-ui5": "^0.13.0"
   },
   "scripts": {

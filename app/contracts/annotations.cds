@@ -14,7 +14,11 @@ annotate service.Contracts with @(
             },
             {
                 $Type: 'UI.DataField',
-                Value: internalcontact,
+                Value: internalcontactname,
+            },
+            {
+                $Type: 'UI.DataField',
+                Value: internalcontactmail,
             },
             {
                 $Type: 'UI.DataField',
@@ -71,7 +75,7 @@ annotate service.Contracts with @(
         },
         {
             $Type: 'UI.DataField',
-            Value: internalcontact,
+            Value: internalcontactname,
         },
         {
             $Type: 'UI.DataField',
