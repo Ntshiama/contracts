@@ -51,4 +51,7 @@ service ContractService {
               attachmentlink,
                            
     };
+
+    @requires: 'authenticated-user'
+    action checkContractDates(ID : UUID) returns String;
 }

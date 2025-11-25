@@ -43,6 +43,15 @@
     }
   },
   "sap.ui5": {
+    "extends": {
+      "extensions": {
+        "sap.ui.controllerExtensions": {
+          "sap.suite.ui.generic.templates.ObjectPage.view.Details": {
+            "controllerName": "contracts.blackwyse.ext.controller.ObjectPageExtension"
+          }
+        }
+      }
+    },
     "flexEnabled": true,
     "dependencies": {
       "minUI5Version": "1.142.1",

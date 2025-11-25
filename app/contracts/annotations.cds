@@ -87,6 +87,14 @@ annotate service.Contracts with @(
             Value: startdate,
         },
     ],
+    UI.HeaderInfo : {
+        TypeName : 'Contract',
+        TypeNamePlural : 'Contracts',
+        Title : {
+            $Type : 'UI.DataField',
+            Value : title,
+        },
+    },
 );
 
 annotate service.Contractitems with @UI.LineItem: [
