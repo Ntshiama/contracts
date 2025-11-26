@@ -22,21 +22,21 @@ entity Partners : cuid, managed {
 }
 
 entity Contracts : cuid, managed {
-   title                : localized String;
-   description          : localized String;
-   internalcontactname  : localized String;
+   title               : localized String;
+   description         : localized String;
+   internalcontactname : localized String;
    internalcontactmail : String;
-   partnercontract      : String;
+   partnercontract     : String;
 
    @Common.FieldControl: #Mandatory
-   startdate            : Date;
-   enddate              : Date;
-   amount               : Decimal;
-   currency             : Currency;
-   status               : String;
-   partner              : Association to Partners;
-   items                : Composition of many Contractitems
-                             on items.parent = $self;
+   startdate           : Date;
+   enddate             : Date;
+   amount              : Decimal;
+   currency            : Currency;
+   status              : String;
+   partner             : Association to Partners;
+   items               : Composition of many Contractitems
+                            on items.parent = $self;
 }
 
 entity Contractitems : cuid, managed {

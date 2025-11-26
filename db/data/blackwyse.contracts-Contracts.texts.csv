@@ -1,10 +1,10 @@
 ID,locale,title,description,status
 d4f2a1b3-5c6d-4e7f-9a0b-4567890123aa,en,Port Services Agreement,Provision of port handling and storage services for container shipments,Active
-d4f2a1b3-5c6d-4e7f-9a0b-4567890123aa,de,Hafenservicevertrag,Erbringung von Hafenumschlag- und Lagerdienstleistungen für Container,Active
-d4f2a1b3-5c6d-4e7f-9a0b-4567890123aa,fr,Contrat de services portuaires,Fourniture de services de manutention et de stockage pour conteneurs,Active
+d4f2a1b3-5c6d-4e7f-9a0b-4567890123aa,de,Hafenservicevertrag,Erbringung von Hafenumschlag- und Lagerdienstleistungen für Container,Aktiv
+d4f2a1b3-5c6d-4e7f-9a0b-4567890123aa,fr,Contrat de services portuaires,Fourniture de services de manutention et de stockage pour conteneurs,Actif
 e5a3b2c4-6d7e-4f8a-0b1c-5678901234bb,en,Maritime Logistics Framework,Logistics and freight forwarding framework agreement,Pending
-e5a3b2c4-6d7e-4f8a-0b1c-5678901234bb,de,Maritimes Logistikrahmenwerk,Logistik- und Speditionsrahmenvertrag,Pending
-e5a3b2c4-6d7e-4f8a-0b1c-5678901234bb,fr,Cadre logistique maritime,Accord-cadre de logistique et de transit,Pending
+e5a3b2c4-6d7e-4f8a-0b1c-5678901234bb,de,Maritimes Logistikrahmenwerk,Logistik- und Speditionsrahmenvertrag,Ausstehend
+e5a3b2c4-6d7e-4f8a-0b1c-5678901234bb,fr,Cadre logistique maritime,Accord-cadre de logistique et de transit,En attente
 f6b4c3d5-7e8f-4a9b-1c2d-6789012345cc,en,Satellite Cargo Services,Specialized handling and insurance for high-value satellite components,Expired
-f6b4c3d5-7e8f-4a9b-1c2d-6789012345cc,de,Satelliten-Frachtservice,Spezialisierte Handhabung und Versicherung für hochwertige Satellitenkomponenten,Expired
-f6b4c3d5-7e8f-4a9b-1c2d-6789012345cc,fr,Services fret satellite,Manutention spécialisée et assurance pour composants satellitaires de grande valeur,Expired
+f6b4c3d5-7e8f-4a9b-1c2d-6789012345cc,de,Satelliten-Frachtservice,Spezialisierte Handhabung und Versicherung für hochwertige Satellitenkomponenten,Abgelaufen
+f6b4c3d5-7e8f-4a9b-1c2d-6789012345cc,fr,Services fret satellite,Manutention spécialisée et assurance pour composants satellitaires de grande valeur,Expiré
