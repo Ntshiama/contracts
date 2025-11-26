@@ -22,7 +22,7 @@ mta_archives/
 .DS_Store
 *.orig
 *.log
-
+*.capnb
 *.iml
 *.flattened-pom.xml
 
