@@ -94,6 +94,10 @@ annotate service.Contracts with @(
             $Type : 'UI.DataField',
             Value : title,
         },
+        Description : {
+            $Type : 'UI.DataField',
+            Value : partner_ID,
+        },
     },
 );
 

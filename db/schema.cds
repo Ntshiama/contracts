@@ -10,7 +10,7 @@ namespace blackwyse.contracts;
 
 entity Partners : cuid, managed {
    title      : localized String;
-   name       : String;
+   name       : localized String;
 
    @Core.IsEmail: true
    email      : String;
@@ -22,9 +22,9 @@ entity Partners : cuid, managed {
 }
 
 entity Contracts : cuid, managed {
-   title                : String;
-   description          : String;
-   internalcontactname  : String;
+   title                : localized String;
+   description          : localized String;
+   internalcontactname  : localized String;
    internalcontactmail : String;
    partnercontract      : String;
 
