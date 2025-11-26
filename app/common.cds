@@ -12,15 +12,14 @@ annotate my.Partners with {
 };
 
 annotate my.Contracts with {
-   title                @title: '{i18n>Title}';
-   description          @title: '{i18n>Description}';
-   internalcontactname  @title: '{i18n>Internalcontact}';
-   internalcontactmail @title: '{i18n>Internalcontactmail}';
-   partnercontract      @title: '{i18n>Perntercontact}';
-   startdate            @title: '{i18n>Begin}';
-   enddate              @title: '{i18n>End}';
-   amount               @title: '{i18n>Amount}'  @Measures.ISOCurrency: currency_code;
-   status               @title: '{i18n>Status}';
+   title           @title: '{i18n>Title}';
+   description     @title: '{i18n>Description}';
+   internalcontact @title: '{i18n>Internalcontact}';
+   partnercontract @title: '{i18n>Perntercontact}';
+   startdate       @title: '{i18n>Begin}';
+   enddate         @title: '{i18n>End}';
+   amount          @title: '{i18n>Amount}'  @Measures.ISOCurrency: currency_code;
+   status          @title: '{i18n>Status}';
 };
 
 annotate my.Contractitems with {

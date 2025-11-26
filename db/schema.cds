@@ -24,8 +24,8 @@ entity Partners : cuid, managed {
 entity Contracts : cuid, managed {
    title               : localized String;
    description         : localized String;
-   internalcontactname : localized String;
-   internalcontactmail : String;
+   internalcontact : localized String;
+   //internalcontactmail : String;
    partnercontract     : String;
 
    @Common.FieldControl: #Mandatory
