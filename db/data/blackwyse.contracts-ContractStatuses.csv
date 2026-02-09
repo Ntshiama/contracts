@@ -1,0 +1,4 @@
+ID,status,description,createdAt,createdBy,modifiedAt,modifiedBy
+20714135-32cb-4439-b1a5-17cd705fabce,ACTIVE,Active,2007-05-27T23:00:00.000Z,createdBy.cbz4n@example.net,2010-06-03T23:00:00.000Z,modifiedBy.cbz4n@example.org
+20714136-21fa-4686-8210-501d3c49f541,PENDING,Pending,2021-04-02T23:00:00.000Z,createdBy.cbz4o@example.org,2002-03-02T23:00:00.000Z,modifiedBy.cbz4o@example.com
+20714137-a126-4c7d-aff1-27789d6d6bec,EXPIRED,Expired,2020-01-14T23:00:00.000Z,createdBy.cbz4p@example.org,2009-03-13T23:00:00.000Z,modifiedBy.cbz4p@example.net

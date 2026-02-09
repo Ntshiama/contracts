@@ -14,7 +14,7 @@ annotate service.Contracts with @(
             },
             {
                 $Type: 'UI.DataField',
-                Value: internalcontactname,
+                Value: internalcontact,
             },
             {
                 $Type: 'UI.DataField',
@@ -39,12 +39,14 @@ annotate service.Contracts with @(
                 Value: enddate,
             },
             {
-                $Type: 'UI.DataField',
-                Value: amount,
+                $Type    : 'UI.DataField',
+                @readonly: true,
+                Value    : amount,
             },
             {
                 $Type: 'UI.DataField',
-                Value: status,
+                Label: 'Status',
+                Common.Text: status.description,
             },
         ],
     },
@@ -61,12 +63,18 @@ annotate service.Contracts with @(
             Label : 'Contract Items',
             Target: 'items/@UI.LineItem',
         },
+        {
+            $Type : 'UI.ReferenceFacet',
+            ID    : 'GeneratedFacet3',
+            Label : 'Attachments',
+            Target: 'attachments/@UI.LineItem',
+        },
 
     ],
     UI.LineItem                  : [
         {
-            $Type: 'UI.DataField',
-            Value: title,
+            $Type            : 'UI.DataField',
+            Value            : title,
             ![@UI.Importance]: #High
         },
         {
@@ -75,7 +83,7 @@ annotate service.Contracts with @(
         },
         {
             $Type: 'UI.DataField',
-            Value: internalcontactname,
+            Value: internalcontact,
         },
         {
             $Type: 'UI.DataField',
@@ -87,16 +95,16 @@ annotate service.Contracts with @(
             Value: startdate,
         },
     ],
-    UI.HeaderInfo : {
-        TypeName : 'Contract',
-        TypeNamePlural : 'Contracts',
-        Title : {
-            $Type : 'UI.DataField',
-            Value : title,
+    UI.HeaderInfo                : {
+        TypeName      : 'Contract',
+        TypeNamePlural: 'Contracts',
+        Title         : {
+            $Type: 'UI.DataField',
+            Value: title,
         },
-        Description : {
-            $Type : 'UI.DataField',
-            Value : partner_ID,
+        Description   : {
+            $Type: 'UI.DataField',
+            Value: partner_ID,
         },
     },
 );
@@ -132,3 +140,35 @@ annotate service.Contractitems with @UI.LineItem: [
         Value: attachmentlink,
     },
 ];
+
+annotate service.Attachments with @UI.LineItem: [{
+    $Type: 'UI.DataFieldWithUrl',
+    Label: 'Attachment Link',
+    Value: attachmentlink,
+}, ];
+
+annotate service.ContractStatuses with @(
+  Common.ValueList: {
+    $Type: 'Common.ValueListType',
+    CollectionPath: 'ContractStatuses',
+    Parameters: [
+      {
+        $Type: 'Common.ValueListParameterInOut',
+        LocalDataProperty: status,
+        ValueListProperty: 'status'
+      },
+      {
+        $Type: 'Common.ValueListParameterDisplayOnly',
+        ValueListProperty: 'description'
+      }
+    ]
+  },
+  Common.ValueListWithFixedValues: true
+);
+
+annotate service.Contracts with {
+  status @Common.Text: status.description
+         @Common.TextArrangement: #TextFirst;
+};
+
+

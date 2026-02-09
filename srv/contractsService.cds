@@ -27,14 +27,16 @@ service ContractService {
             description,
             internalcontact,
           //  internalcontactmail,
-            //,
+            partnercontract,
             startdate,
             enddate,
+            @readonly
             amount,  
             currency,
-            status,
+            status{ status, description },
             partner,
-            items : redirected to Contractitems
+            items : redirected to Contractitems,
+            attachments : redirected to Attachments
        };
     @cds.odata.valuelist
     entity Contractitems as 
@@ -52,6 +54,22 @@ service ContractService {
                            
     };
 
+    @cds.odata.valuelist
+    entity Attachments as
+        projection on my.Attachments {
+          key ID,
+              contract,
+              item,
+              @core.isURL: true
+              attachmentlink
+        };
+    @cds.odata.valuelist
+    entity ContractStatuses as
+        projection on my.ContractStatuses {
+          key ID,
+              status,
+              description
+        };
     @requires: 'authenticated-user'
     action checkContractDates(ID : UUID) returns String;
 }
