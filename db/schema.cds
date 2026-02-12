@@ -9,14 +9,17 @@ namespace blackwyse.contracts;
 
 
 entity Partners : cuid, managed {
-   title                     : localized String;
-   name                      : localized String;
-   @Core.IsEmail: true email : String;
-   phone                     : String;
-   street                    : String;
-   city                      : String;
-   postalcode                : String;
-   country                   : Country;
+   title      : localized String;
+   name       : localized String;
+
+   @Core.IsEmail : true
+   @assert.format: 'email'
+   email      : String(255);
+   phone      : String(40);
+   street     : String;
+   city       : String;
+   postalcode : String;
+   country    : Country;
 }
 
 entity Contracts : cuid, managed {
@@ -27,8 +30,9 @@ entity Contracts : cuid, managed {
    @Core.IsEmail : true partnercontract       : String;
    @Common.FieldControl: #Mandatory startdate : Date  @mandatory;
    enddate                                    : Date  @mandatory;
+
    @Core.Computed: true
-   amount                                     : Decimal(15,2);
+   amount                                     : Decimal(15, 2);
    currency                                   : Currency;
    status                                     : Association to ContractStatuses;
    partner                                    : Association to Partners;
@@ -40,18 +44,18 @@ entity Contracts : cuid, managed {
 }
 
 entity Contractitems : cuid, managed {
-   parent         : Association to one Contracts;
-   description    : String;
-   quantity       : Integer;
-   price          : Decimal;
-   currency       : Currency;
-   startdate      : Date;
-   enddate        : Date;
-   attachments    : Composition of many Attachments
-                       on attachments.item = $self;
+   parent          : Association to one Contracts;
+   position        : Integer;
+   description     : String;
+   quantity        : Integer;
+   price           : Decimal;
+   currency        : Currency;
+   startdate       : Date;
+   enddate         : Date;
+   attachments     : Composition of many Attachments
+                        on attachments.item = $self;
+   attachmentlinks : String; // comma-separated list of attachment URLs
 
-   @Core.IsURL: true
-   attachmentlink : String
 }
 
 entity Attachments : cuid, managed {

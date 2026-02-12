@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.19.5",
-      "toolsId": "b156408a-81c6-451d-8ab2-d19cc10b095f"
+      "toolsId": "73aa5393-3de2-4089-ae51-467aa6bf2076"
     },
     "dataSources": {
       "mainService": {
@@ -43,22 +43,14 @@
     }
   },
   "sap.ui5": {
-    "extends": {
-      "extensions": {
-        "sap.ui.controllerExtensions": {
-          "sap.suite.ui.generic.templates.ObjectPage.view.Details": {
-            "controllerName": "contracts.blackwyse.ext.controller.ObjectPageExtension"
-          }
-        }
-      }
-    },
     "flexEnabled": true,
     "dependencies": {
-      "minUI5Version": "1.142.1",
+      "minUI5Version": "1.144.1",
       "libs": {
         "sap.m": {},
         "sap.ui.core": {},
-        "sap.fe.templates": {}
+        "sap.fe.templates": {},
+        "sap.fe.macros": {}
       }
     },
     "contentDensities": {
@@ -137,8 +129,7 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Contracts",
-              "variantManagement": "Control"
+              "contextPath": "/Contracts"
             }
           }
         }

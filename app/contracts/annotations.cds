@@ -1,169 +1,146 @@
 using ContractService as service from '../../srv/contractsService';
-
 annotate service.Contracts with @(
-    UI.FieldGroup #GeneratedGroup: {
-        $Type: 'UI.FieldGroupType',
+    UI.FieldGroup #GeneratedGroup : {
+        $Type : 'UI.FieldGroupType',
         Data : [
             {
-                $Type: 'UI.DataField',
-                Value: title,
+                $Type : 'UI.DataField',
+                Value : description,
             },
             {
-                $Type: 'UI.DataField',
-                Value: description,
+                $Type : 'UI.DataField',
+                Value : internalcontact,
             },
             {
-                $Type: 'UI.DataField',
-                Value: internalcontact,
+                $Type : 'UI.DataField',
+                Value : partner.name,
             },
             {
-                $Type: 'UI.DataField',
-                Value: internalcontactmail,
+                $Type : 'UI.DataField',
+                Value : partner.email,
             },
             {
-                $Type: 'UI.DataField',
-                Label: 'Partner Name',
-                Value: partner.name,
+                $Type : 'UI.DataField',
+                Value : internalcontactemail,
             },
             {
-                $Type: 'UI.DataField',
-                Label: 'Partner Email',
-                Value: partner.email,
+                $Type : 'UI.DataField',
+                Value : startdate,
             },
             {
-                $Type: 'UI.DataField',
-                Value: startdate,
+                $Type : 'UI.DataField',
+                Value : enddate,
             },
             {
-                $Type: 'UI.DataField',
-                Value: enddate,
+                $Type : 'UI.DataField',
+                Value : amount,
             },
             {
-                $Type    : 'UI.DataField',
-                @readonly: true,
-                Value    : amount,
-            },
-            {
-                $Type: 'UI.DataField',
-                Label: 'Status',
-                Common.Text: status.description,
+                $Type : 'UI.DataField',
+                Label : 'status_description',
+                Value : status_description,
             },
         ],
     },
-    UI.Facets                    : [
+    UI.Facets : [
         {
             $Type : 'UI.ReferenceFacet',
-            ID    : 'GeneratedFacet1',
+            ID : 'GeneratedFacet1',
             Label : 'General Information',
-            Target: '@UI.FieldGroup#GeneratedGroup',
+            Target : '@UI.FieldGroup#GeneratedGroup',
         },
         {
             $Type : 'UI.ReferenceFacet',
-            ID    : 'GeneratedFacet2',
-            Label : 'Contract Items',
-            Target: 'items/@UI.LineItem',
+            Label : 'Details Information',
+            ID : 'DetailInformation',
+            Target : 'items/@UI.LineItem#DetailInformation',
         },
         {
             $Type : 'UI.ReferenceFacet',
-            ID    : 'GeneratedFacet3',
-            Label : 'Attachments',
-            Target: 'attachments/@UI.LineItem',
-        },
-
-    ],
-    UI.LineItem                  : [
-        {
-            $Type            : 'UI.DataField',
-            Value            : title,
-            ![@UI.Importance]: #High
-        },
-        {
-            $Type: 'UI.DataField',
-            Value: description,
-        },
-        {
-            $Type: 'UI.DataField',
-            Value: internalcontact,
-        },
-        {
-            $Type: 'UI.DataField',
-            Label: 'Partner Name',
-            Value: partner.name,
-        },
-        {
-            $Type: 'UI.DataField',
-            Value: startdate,
+            Label : 'Attachments Infomation',
+            ID : 'AttachmentInfomation',
+            Target : 'attachments/@UI.LineItem#AttachmentInfomation',
         },
     ],
-    UI.HeaderInfo                : {
-        TypeName      : 'Contract',
-        TypeNamePlural: 'Contracts',
-        Title         : {
-            $Type: 'UI.DataField',
-            Value: title,
+    UI.LineItem : [
+        {
+            $Type : 'UI.DataField',
+            Value : title,
         },
-        Description   : {
-            $Type: 'UI.DataField',
-            Value: partner_ID,
+        {
+            $Type : 'UI.DataField',
+            Value : description,
         },
+        {
+            $Type : 'UI.DataField',
+            Value : internalcontact,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : partner.name,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : startdate,
+        },
+    ],
+    UI.HeaderInfo : {
+        Title : {
+            $Type : 'UI.DataField',
+            Value : title,
+        },
+        TypeName : 'Contract',
+        TypeNamePlural : 'Contracts',
     },
 );
-
-annotate service.Contractitems with @UI.LineItem: [
-    {
-        $Type: 'UI.DataField',
-        Value: description,
-    },
-    {
-        $Type: 'UI.DataField',
-        Value: quantity,
-    },
-    {
-        $Type: 'UI.DataField',
-        Value: price,
-    },
-    {
-        $Type: 'UI.DataField',
-        Value: currency_code,
-    },
-    {
-        $Type: 'UI.DataField',
-        Value: startdate,
-    },
-    {
-        $Type: 'UI.DataField',
-        Value: enddate,
-    },
-];
-
-annotate service.Attachments with @UI.LineItem: [{
-    $Type: 'UI.DataFieldWithUrl',
-    Label: 'Attachment Link',
-    Value: attachmentlink,
-}, ];
-
-annotate service.ContractStatuses with @(
-  Common.ValueList: {
-    $Type: 'Common.ValueListType',
-    CollectionPath: 'ContractStatuses',
-    Parameters: [
-      {
-        $Type: 'Common.ValueListParameterInOut',
-        LocalDataProperty: status,
-        ValueListProperty: 'status'
-      },
-      {
-        $Type: 'Common.ValueListParameterDisplayOnly',
-        ValueListProperty: 'description'
-      }
+annotate service.Contractitems with @(
+    UI.LineItem #DetailInformation : [
+        {
+            $Type : 'UI.DataField',
+            Value : parent.items.position,
+            Label : 'Position',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : parent.items.description,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : parent.items.price,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : parent.items.quantity,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : parent.items.startdate,
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : parent.items.enddate,
+        },
     ]
-  },
-  Common.ValueListWithFixedValues: true
 );
 
-annotate service.Contracts with {
-  status @Common.Text: status.description
-         @Common.TextArrangement: #TextFirst;
-};
-
+annotate service.Attachments with @(
+    UI.LineItem #AttachmentInfomation : [
+        {
+            $Type : 'UI.DataField',
+            Value : item.position,
+            Label : 'item_position',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : contract.title,
+            Label : 'contract_ID',
+        },
+        {
+            $Type : 'UI.DataField',
+            uri : true,
+            Value : attachmentlink,
+            Label : 'attachmentlink',
+        },
+    ]
+);
 

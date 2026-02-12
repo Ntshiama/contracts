@@ -1,16 +1,16 @@
 {
   "generationParameters": {
-    "generationDate": "Tue Nov 18 2025 13:08:28 GMT+0100 (Central European Standard Time)",
+    "generationDate": "Tue Feb 10 2026 10:55:02 GMT+0100 (Central European Standard Time)",
     "generatorPlatform": "Visual Studio Code",
     "serviceType": "Local CAP",
     "metadataFilename": "",
     "serviceUrl": "http://localhost:4004/odata/v4/contract/",
     "appName": "contracts",
-    "appTitle": "Contract Manger",
+    "appTitle": "Contractmaager",
     "appDescription": "An SAP Fiori application.",
     "appNamespace": "blackwyse.contracts",
     "ui5Theme": "sap_horizon",
-    "ui5Version": "1.142.1",
+    "ui5Version": "1.144.1",
     "enableCodeAssist": false,
     "enableEslint": false,
     "enableTypeScript": false,
@@ -22,6 +22,10 @@
       {
         "type": "Main Entity",
         "value": "Contracts"
+      },
+      {
+        "type": "Navigation Entity",
+        "value": "None"
       }
     ],
     "launchText": "To launch the generated app, start your CAP project:  and navigate to the following location in your browser:\n\nhttp://localhost:4004/blackwyse.contracts.contracts/index.html"

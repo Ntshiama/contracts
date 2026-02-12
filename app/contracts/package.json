@@ -13,14 +13,6 @@
     "@ui5/cli": "^4.0.16",
     "@sap/ux-ui5-tooling": "1"
   },
-  "cds": {
-    "requires":  {
-      "db": {
-        "kind": "sqlite",
-        "database": "db.sqlite"
-      }
-    }
-  },
   "scripts": {
     "deploy-config": "npx -p @sap/ux-ui5-tooling fiori add deploy-config cf"
   }

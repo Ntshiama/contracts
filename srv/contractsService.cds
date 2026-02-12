@@ -26,7 +26,7 @@ service ContractService {
             title,
             description,
             internalcontact,
-          //  internalcontactmail,
+            internalcontactmail,
             partnercontract,
             startdate,
             enddate,
@@ -42,15 +42,14 @@ service ContractService {
     entity Contractitems as 
         projection on my.Contractitems {
           key ID,
+              position,
               parent,
               description,
               quantity,
               price,
               currency ,
               startdate,
-              enddate,
-              @Core.IsURL: true
-              attachmentlink,
+              enddate
                            
     };
 

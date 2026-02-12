@@ -28,13 +28,20 @@
   },
   "scripts": {
     "start": "cds-serve",
-    "watch-contracts": "cds watch --open blackwyse.contracts.contracts/index.html?sap-ui-xx-viewCache=false --livereload false"
+    "watch-contracts": "cds watch --open blackwyse.contracts.contracts/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-contracts-listview": "cds watch --open blackwyse.contracts.contractslistview/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-project1": "cds watch --open project1/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "private": true,
   "workspaces": [
     "app/*"
   ],
   "sapux": [
+    "app/contracts",
+    "app/contracts-listview",
+    "app/contracts",
+    "app/contracts",
+    "app/project1",
     "app/contracts"
   ]
 }

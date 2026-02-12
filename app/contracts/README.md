@@ -1,7 +1,7 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Tue Nov 18 2025 13:08:28 GMT+0100 (Central European Standard Time)|
+|**Generation Date and Time**<br>Tue Feb 10 2026 10:55:02 GMT+0100 (Central European Standard Time)|
 |**App Generator**<br>SAP Fiori Application Generator|
 |**App Generator Version**<br>1.19.5|
 |**Generation Platform**<br>Visual Studio Code|
@@ -9,14 +9,15 @@
 |**Service Type**<br>Local CAP|
 |**Service URL**<br>http://localhost:4004/odata/v4/contract/|
 |**Module Name**<br>contracts|
-|**Application Title**<br>Contract Manger|
+|**Application Title**<br>Contractmaager|
 |**Namespace**<br>blackwyse.contracts|
 |**UI5 Theme**<br>sap_horizon|
-|**UI5 Version**<br>1.142.1|
+|**UI5 Version**<br>1.144.1|
 |**Enable Code Assist Libraries**<br>False|
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
 |**Main Entity**<br>Contracts|
+|**Navigation Entity**<br>None|
 
 ## contracts
 
